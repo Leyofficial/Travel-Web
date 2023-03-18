@@ -99,7 +99,7 @@ header {
         color: $links;
         margin-bottom: 32px;
     }
-
+    }
     .main__header-btn {
         width: 273px;
         margin: 0 auto;
@@ -125,7 +125,7 @@ header {
             font-size: 18px;
         }
     }
-}
+
 
 .main__serch-items {
     display: flex;
@@ -512,6 +512,9 @@ header {
 }
 
 @media (max-width:500px) {
+    .container {
+        padding: 0 17px;
+    }
     .main__header .main__header-title {
         color: #5600ff;
     }
@@ -525,6 +528,24 @@ header {
 
     .section-reviews__items .section-reviews__item h3 {
         font-size: 14px;
+    }
+    .footer-main-items .footer-list {
+        grid-template-columns: repeat(3,1fr);
+        display: grid;
+    }
+    .footer-main-items  {
+        display: block;
+    }
+    .footer-main-items .footer-logo p  {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .footer-main-items .footer-list .footer-menu__text{
+        font-size: 11px;
+    }
+    .footer-main-items .footer-list .footer-menu__text--active {
+        font-size: 15px;
+        line-height: 0px;
     }
 
     @media (max-width: 800px) {
