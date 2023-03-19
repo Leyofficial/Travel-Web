@@ -100,6 +100,10 @@ header {
   font-size: 18px;
 }
 
+.menu-btn {
+  display: none;
+}
+
 .main__serch-items {
   display: flex;
   justify-content: space-around;
@@ -290,6 +294,13 @@ header {
   color: #585858;
 }
 
+@media (max-width: 1450px) {
+  .section-reviews__items {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1100px) {
   .header__top .header__list li {
     margin-right: 30px;
@@ -387,7 +398,7 @@ header {
   }
   .section-reviews__items .section-reviews__item {
     margin-bottom: 50px;
-    width: 100%;
+    max-width: 100%;
   }
   .activities__items {
     grid-template-columns: repeat(2, 1fr);
@@ -439,6 +450,7 @@ header {
     right: 0;
     position: absolute;
     margin-right: 40px;
+    display: block;
   }
   .header__logo {
     position: relative;
@@ -487,11 +499,14 @@ header {
     padding: 0 17px;
     max-width: 500px;
   }
+  .header__top {
+    margin-bottom: 115px;
+  }
   .section-items {
     width: 100%;
   }
   .serch-img {
-    width: 100%;
+    width: 75%;
     margin-bottom: 30px;
   }
   .section-reviews__items .section-reviews__item {
@@ -509,7 +524,7 @@ header {
     color: #5600ff;
   }
   .review-img {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .activities__item {
@@ -541,11 +556,14 @@ header {
   }
   .section-reviews__items .section-reviews__item h3 {
     font-size: 25px;
-    width: 330px;
+    width: 100%;
     text-align: center;
   }
   .section-reviews__items .section-reviews__item p {
     font-size: 20px;
+  }
+  .section-about-items .section-about__item {
+    margin-bottom: 40px;
   }
   .footer-main-items .footer-list {
     grid-template-columns: repeat(3, 1fr);
@@ -555,7 +573,7 @@ header {
     display: block;
   }
   .footer-main-items .footer-logo p {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 50px;
   }
   .footer-main-items .footer-list .footer-menu__text {
@@ -565,8 +583,6 @@ header {
     font-size: 15px;
     line-height: 0px;
   }
-}
-@media (max-width: 500px) and (max-width: 800px) {
   .section-items {
     grid-template-columns: repeat(1, 1fr);
     gap: 70px;
